@@ -16,35 +16,34 @@ class _OnboardingState extends State<Onboarding> {
       backgroundColor: Colors.white,
       body: Container(
         margin: const EdgeInsets.only(top: 20),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [Image.asset("images/logo.png")]),
-            GestureDetector(
-              onTap: () {
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => Home()),
-                );
-              },
-              
-              child: Container(
-                padding: EdgeInsets.symmetric(vertical: 16, horizontal: 28),
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    color: ColorStyle.color06),
-                child: Text("Let's Get Started",
-                    style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    )),
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [Image.asset("images/logo.png")]),
+          GestureDetector(
+            onTap: () {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => Home()),
+              );
+            },
+            child: Container(
+              padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 28),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: ColorStyle.color06, // Pastikan ini juga didefinisikan
               ),
-            )
-          ],
-        ),
+              child: const Text(
+                "Let's Get Started",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          )
+        ]),
       ),
     );
   }
