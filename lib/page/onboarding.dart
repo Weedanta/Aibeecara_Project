@@ -13,7 +13,7 @@ class _OnboardingState extends State<Onboarding> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: ColorStyle.white,
       body: Container(
         margin: const EdgeInsets.only(top: 20),
         child: Column(
@@ -22,6 +22,9 @@ class _OnboardingState extends State<Onboarding> {
             Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [Image.asset("images/logo.png")]),
+            const SizedBox(
+              height: 72,
+            ),
             GestureDetector(
               onTap: () {
                 Navigator.pushReplacement(
@@ -31,14 +34,14 @@ class _OnboardingState extends State<Onboarding> {
               },
               
               child: Container(
-                padding: EdgeInsets.symmetric(vertical: 16, horizontal: 28),
+                padding: EdgeInsets.symmetric(vertical: 16, horizontal: 100),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
                     color: ColorStyle.color06),
                 child: Text("Let's Get Started",
                     style: TextStyle(
                       fontSize: 20,
-                      color: Colors.white,
+                      color: ColorStyle.white,
                       fontWeight: FontWeight.bold,
                     )),
               ),
