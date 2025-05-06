@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_project/page/home.dart';
+
+import 'package:my_project/page/onboarding/onboarding2.dart';
 import 'package:my_project/themes/color.dart';
 
 class Onboarding extends StatefulWidget {
@@ -29,7 +31,7 @@ class _OnboardingState extends State<Onboarding> {
               onTap: () {
                 Navigator.pushReplacement(
                   context,
-                  MaterialPageRoute(builder: (context) => Home()),
+                  MaterialPageRoute(builder: (context) => Onboarding2()),
                 );
               },
               
@@ -41,7 +43,7 @@ class _OnboardingState extends State<Onboarding> {
                 child: Text("Let's Get Started",
                     style: TextStyle(
                       fontSize: 20,
-                      color: ColorStyle.white,
+                      // color: ColorStyle.white,
                       fontWeight: FontWeight.bold,
                     )),
               ),
