@@ -47,15 +47,6 @@ class _OnboardingState extends State<Onboarding> {
                     )),
 
               ),
-              child: const Text(
-                "Let's Get Started",
-                style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
           )
         ]),
       ),
