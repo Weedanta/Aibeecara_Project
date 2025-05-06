@@ -21,17 +21,17 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     {
       'title': 'Welcome to FakeStore',
       'description': 'Discover a wide range of products from electronics to fashion all in one place.',
-      'image': 'assets/images/onboarding_1.png',
+      'image': 'images/onboarding/onboarding1.png',
     },
     {
       'title': 'Browse Categories',
       'description': 'Find what you need easily with our organized product categories and smart search.',
-      'image': 'assets/images/onboarding_2.png',
+      'image': 'images/onboarding/onboarding2.png',
     },
     {
       'title': 'Secure Checkout',
       'description': 'Shop with confidence using our secure and fast checkout process.',
-      'image': 'assets/images/onboarding_3.png',
+      'image': 'images/onboarding/onboarding3.png',
     },
   ];
 
@@ -116,22 +116,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   
                   // Navigation buttons
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      // Back button (visible after first page)
-                      _currentPage > 0
-                          ? CustomIconButton(
-                              icon: Icons.arrow_back,
-                              onPressed: () {
-                                _pageController.previousPage(
-                                  duration: const Duration(milliseconds: 300),
-                                  curve: Curves.easeInOut,
-                                );
-                              },
-                            )
-                          : const SizedBox(width: 48),
-                      
-                      // Next or Get Started button
                       CustomButton(
                         text: _currentPage < _onboardingData.length - 1
                             ? 'Next'

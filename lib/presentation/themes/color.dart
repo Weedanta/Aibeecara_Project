@@ -16,7 +16,7 @@ class ColorStyle {
 
 class AppColors {
   // Primary colors
-  static const Color primary = Color(0xFF5F67EA);
+  static const Color primary = Color(0xFFFF7F00);
   static const Color secondary = Color(0xFF3B3E8C);
   
   // Background colors
