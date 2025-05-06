@@ -16,6 +16,7 @@ class _OnboardingState extends State<Onboarding> {
       backgroundColor: ColorStyle.white,
       body: Container(
         margin: const EdgeInsets.only(top: 20),
+
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -44,10 +45,19 @@ class _OnboardingState extends State<Onboarding> {
                       color: ColorStyle.white,
                       fontWeight: FontWeight.bold,
                     )),
+
               ),
-            )
-          ],
-        ),
+              child: const Text(
+                "Let's Get Started",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          )
+        ]),
       ),
     );
   }
