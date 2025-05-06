@@ -18,41 +18,41 @@ class AppTheme {
           fontSize: 28,
           fontWeight: FontWeight.bold,
           color: AppColors.textPrimary,
-          fontFamily: 'Poppins',
+          
         ),
         headlineMedium: TextStyle(
           fontSize: 24,
           fontWeight: FontWeight.bold,
           color: AppColors.textPrimary,
-          fontFamily: 'Poppins',
+          
         ),
         titleLarge: TextStyle(
           fontSize: 20,
           fontWeight: FontWeight.w600,
           color: AppColors.textPrimary,
-          fontFamily: 'Poppins',
+          
         ),
         titleMedium: TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.w500,
           color: AppColors.textPrimary,
-          fontFamily: 'Poppins',
+          
         ),
         bodyLarge: TextStyle(
           fontSize: 16,
           color: AppColors.textSecondary,
-          fontFamily: 'Poppins',
+          
         ),
         bodyMedium: TextStyle(
           fontSize: 14,
           color: AppColors.textSecondary,
-          fontFamily: 'Poppins',
+          
         ),
         labelLarge: TextStyle(
           fontSize: 16,
           fontWeight: FontWeight.w500,
           color: Colors.white,
-          fontFamily: 'Poppins',
+          
         ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
@@ -67,7 +67,7 @@ class AppTheme {
           textStyle: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w600,
-            fontFamily: 'Poppins',
+            
           ),
         ),
       ),
@@ -82,7 +82,7 @@ class AppTheme {
           textStyle: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w600,
-            fontFamily: 'Poppins',
+            
           ),
         ),
       ),
@@ -93,7 +93,7 @@ class AppTheme {
           textStyle: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w500,
-            fontFamily: 'Poppins',
+            
           ),
         ),
       ),
@@ -136,7 +136,7 @@ class AppTheme {
           fontSize: 20,
           fontWeight: FontWeight.w600,
           color: AppColors.textPrimary,
-          fontFamily: 'Poppins',
+          
         ),
         iconTheme: IconThemeData(color: AppColors.textPrimary),
       ),
