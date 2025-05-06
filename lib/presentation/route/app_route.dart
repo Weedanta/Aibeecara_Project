@@ -16,8 +16,8 @@ class AppRoutes {
     switch (settings.name) {
       case splash:
         return MaterialPageRoute(builder: (_) => const SplashScreen());
-      // case onboarding:
-      //   return MaterialPageRoute(builder: (_) => const OnboardingScreen());
+      case onboarding:
+        return MaterialPageRoute(builder: (_) => const OnboardingScreen());
       // case login:
       //   return MaterialPageRoute(builder: (_) => const LoginScreen());
       default:
