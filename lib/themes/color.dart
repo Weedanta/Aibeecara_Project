@@ -7,4 +7,7 @@ class ColorStyle {
   static Color color04 = Color(0xFFF2F2F2);
   static Color color05 = Color(0xFF121111);
   static Color color06 = Color(0xFFFF7F00);
+
+  static Color white = Color(0xFFFFFFFF);
+  static Color black = Color(0xFF000000);
 }
