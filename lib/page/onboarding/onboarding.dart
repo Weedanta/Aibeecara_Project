@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/page/home.dart';
 
 import 'package:my_project/page/onboarding/onboarding2.dart';
-import 'package:my_project/themes/color.dart';
+import 'package:my_project/presentation/themes/color.dart';
 
 class Onboarding extends StatefulWidget {
   const Onboarding({super.key});

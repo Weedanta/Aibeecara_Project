@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/themes/color.dart';
-import 'package:my_project/widget/reusable/primary_button.dart';
+import 'package:my_project/presentation/widget/reusable/primary_button.dart';
 
 
 class OnboardingContent extends StatelessWidget {
