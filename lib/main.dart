@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_project/page/home.dart';
+import 'package:my_project/page/onboarding.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.system,
-      home: Home(),
+      home: Onboarding(),
     );
   }
 }
