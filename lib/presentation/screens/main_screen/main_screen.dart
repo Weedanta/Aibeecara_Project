@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_project/presentation/themes/color.dart';
 import '../cart_screen/cart_screen.dart';
 import '../profile_screen/profile_screen.dart';
-import 'homescreen.dart';
+import '../main_screen/home_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({Key? key}) : super(key: key);
