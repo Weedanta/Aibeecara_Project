@@ -7,7 +7,7 @@ import 'package:my_project/presentation/widget/Onboarding/page_indicator.dart';
 
 
 class OnboardingScreen extends StatefulWidget {
-  const OnboardingScreen({Key? key}) : super(key: key);
+  const OnboardingScreen({super.key});
 
   @override
   State<OnboardingScreen> createState() => _OnboardingScreenState();
@@ -118,12 +118,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
+
                       CustomButton(
                         text: _currentPage < _onboardingData.length - 1
                             ? 'Next'
                             : 'Get Started',
                         onPressed: _navigateToNextPage,
-                        width: 200,
+                        width: 360,
                       ),
                     ],
                   ),

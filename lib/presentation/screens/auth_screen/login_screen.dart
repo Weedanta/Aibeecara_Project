@@ -6,7 +6,7 @@ import 'package:my_project/presentation/widget/formfield.dart';
 
 
 class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+  const LoginScreen({super.key});
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
@@ -171,40 +171,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     isLoading: _isLoading,
                   ),
                   const SizedBox(height: 24),
-                  
-                  // Divider
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Divider(color: AppColors.divider),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: Text(
-                          'OR',
-                          style: TextStyle(
-                            color: AppColors.textLight,
-                            fontWeight: FontWeight.w500,
-                          ),
-                        ),
-                      ),
-                      Expanded(
-                        child: Divider(color: AppColors.divider),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 24),
-                  
-                  // Social login buttons
-                  CustomButton(
-                    text: 'Continue with Google',
-                    onPressed: () {
-                      // Implement Google sign in
-                    },
-                    isOutlined: true,
-                    icon: Icons.g_mobiledata,
-                  ),
-                  const SizedBox(height: 40),
+                 
                   
                   // Sign up text
                   Center(

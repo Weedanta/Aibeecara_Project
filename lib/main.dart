@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:my_project/page/onboarding/onboarding.dart';
 import 'package:my_project/presentation/route/app_route.dart';
-import 'package:my_project/presentation/screens/splash_screen/splash_screen.dart';
 import 'package:my_project/presentation/themes/theme_data.dart';
 
 void main() {

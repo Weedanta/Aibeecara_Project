@@ -12,7 +12,7 @@ class PageIndicator extends StatelessWidget {
   final Color inactiveDotColor;
 
   const PageIndicator({
-    Key? key,
+    super.key,
     required this.pageCount,
     required this.currentPage,
     this.dotSize = 8.0,
@@ -20,7 +20,7 @@ class PageIndicator extends StatelessWidget {
     this.spacing = 8.0,
     this.activeDotColor = AppColors.primary,
     this.inactiveDotColor = AppColors.textLight,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
