@@ -18,7 +18,7 @@ class CustomFormField extends StatelessWidget {
   final bool isEnabled;
 
   const CustomFormField({
-    Key? key,
+    super.key,
     required this.label,
     this.hintText,
     this.prefixIcon,
@@ -32,7 +32,7 @@ class CustomFormField extends StatelessWidget {
     this.focusNode,
     this.nextFocusNode,
     this.isEnabled = true,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

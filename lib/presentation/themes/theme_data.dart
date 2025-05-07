@@ -10,7 +10,6 @@ class AppTheme {
         primary: AppColors.primary,
         secondary: AppColors.secondary,
         surface: AppColors.cardBackground,
-        background: AppColors.background,
         error: AppColors.error,
       ),
       textTheme: TextTheme(

@@ -10,13 +10,13 @@ class OnboardingPage extends StatelessWidget {
   final Color textColor;
 
   const OnboardingPage({
-    Key? key,
+    super.key,
     required this.title,
     required this.description,
     required this.imagePath,
     this.backgroundColor = Colors.white,
     this.textColor = AppColors.textPrimary,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
