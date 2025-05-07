@@ -29,7 +29,7 @@ class ApiConfig {
       final response = await _client
           .get(url, headers: getHeaders(token: token))
           .timeout(timeout);
-      
+
       return _handleResponse(response);
     } catch (e) {
       debugPrint('Error during GET request to $endpoint: $e');
@@ -37,17 +37,26 @@ class ApiConfig {
     }
   }
 
-  static Future<dynamic> post(String endpoint, dynamic data, {String? token}) async {
+  static Future<dynamic> post(String endpoint, dynamic data,
+      {String? token}) async {
     try {
       final url = Uri.parse('$baseUrl$endpoint');
+      final jsonData = json.encode(data);
+
+      debugPrint('POST request to: $url');
+      debugPrint('Body: $jsonData');
+
       final response = await _client
           .post(
             url,
             headers: getHeaders(token: token),
-            body: json.encode(data),
+            body: jsonData,
           )
           .timeout(timeout);
-      
+
+      debugPrint('Response status: ${response.statusCode}');
+      debugPrint('Response body: ${response.body}');
+
       return _handleResponse(response);
     } catch (e) {
       debugPrint('Error during POST request to $endpoint: $e');
@@ -55,7 +64,8 @@ class ApiConfig {
     }
   }
 
-  static Future<dynamic> put(String endpoint, dynamic data, {String? token}) async {
+  static Future<dynamic> put(String endpoint, dynamic data,
+      {String? token}) async {
     try {
       final url = Uri.parse('$baseUrl$endpoint');
       final response = await _client
@@ -65,7 +75,7 @@ class ApiConfig {
             body: json.encode(data),
           )
           .timeout(timeout);
-      
+
       return _handleResponse(response);
     } catch (e) {
       debugPrint('Error during PUT request to $endpoint: $e');
@@ -79,7 +89,7 @@ class ApiConfig {
       final response = await _client
           .delete(url, headers: getHeaders(token: token))
           .timeout(timeout);
-      
+
       return _handleResponse(response);
     } catch (e) {
       debugPrint('Error during DELETE request to $endpoint: $e');
@@ -105,12 +115,12 @@ class ApiConfig {
 class ApiException implements Exception {
   final int statusCode;
   final String message;
-  
+
   ApiException({
     required this.statusCode,
     required this.message,
   });
-  
+
   @override
   String toString() {
     return 'ApiException: [$statusCode] $message';
