@@ -1,0 +1,2 @@
+C:/Users/wedanta/OneDrive/Documents/Teknologi Informasi/Mobile/Aibeera Project/my_project/android/app/.cxx/Debug/47y11562/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/wedanta/OneDrive/Documents/Teknologi Informasi/Mobile/Aibeera Project/my_project/android/app/.cxx/Debug/47y11562/arm64-v8a/CMakeFiles/rebuild_cache.dir
