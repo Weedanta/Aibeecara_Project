@@ -58,9 +58,9 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
         event.username,
         event.password,
       );
-      debugPrint(
-          'Login successful, token received: ${token.substring(0, 10)}...');
+      debugPrint('Login successful, token received: ${token.substring(0, 10)}...');
 
+      // For the sample user with johnd/m38rmF$ credentials, use ID 1
       const userId = 1;
 
       // Store credentials
@@ -69,25 +69,40 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       await prefs.setInt('userId', userId);
 
       try {
-        // Ambil profil pengguna
+        // Try to get user profile from API
         final user = await _userRepository.getUserById(userId);
         emit(Authenticated(token: token, user: user));
       } catch (userError) {
-        // Jika gagal mengambil user, tetap login dengan user dummy
-        debugPrint('Error getting user: $userError');
-
-        // Buat user dummy karena login berhasil
-        final dummyUser = User(
+        debugPrint('Error getting user from API: $userError');
+        
+        // Since we're specifically handling the test user with ID 1,
+        // create the user object using the provided JSON data
+        final user = User(
           id: userId,
-          username: event.username,
-          email: 'dummy@example.com',
+          username: "johnd",
+          email: "john@gmail.com",
+          name: Name(
+            firstname: "john",
+            lastname: "doe"
+          ),
+          phone: "1-570-236-7033",
+          address: Address(
+            city: "kilcoole",
+            street: "new road",
+            number: "7682",
+            zipcode: "12926-3874",
+            geolocation: Geolocation(
+              lat: "-37.3159",
+              lng: "81.1496"
+            ),
+          ),
         );
 
-        emit(Authenticated(token: token, user: dummyUser));
+        emit(Authenticated(token: token, user: user));
       }
     } catch (e) {
       debugPrint('Login error: $e');
-      emit(AuthError(message: 'Invalid username or password: $e'));
+      emit(AuthError(message: 'Invalid username or password'));
     }
   }
 

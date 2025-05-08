@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:my_project/presentation/route/app_route.dart';
 import 'package:my_project/presentation/themes/color.dart';
 import 'dart:async';
-import 'package:my_project/presentation/themes/theme_data.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -68,7 +67,6 @@ class _SplashScreenState extends State<SplashScreen>
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    // Logo container - replace with your app logo
                     Container(
                       width: 120,
                       height: 120,
@@ -84,10 +82,11 @@ class _SplashScreenState extends State<SplashScreen>
                         ],
                       ),
                       child: Center(
-                        child: Icon(
-                          Icons.shopping_bag_outlined,
-                          size: 70,
-                          color: AppColors.primary,
+                        child: Image.asset(
+                          'images/logo.png',
+                          width: 70,
+                          height: 70,
+                          fit: BoxFit.cover,
                         ),
                       ),
                     ),
@@ -112,7 +111,6 @@ class _SplashScreenState extends State<SplashScreen>
                       ),
                     ),
                     const SizedBox(height: 48),
-                    // Loading indicator
                     SizedBox(
                       width: 40,
                       height: 40,

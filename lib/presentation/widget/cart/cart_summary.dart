@@ -7,10 +7,10 @@ class CartSummary extends StatelessWidget {
   final VoidCallback onCheckout;
 
   const CartSummary({
-    Key? key,
+    super.key,
     required this.cart,
     required this.onCheckout,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

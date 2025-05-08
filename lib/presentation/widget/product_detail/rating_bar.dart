@@ -6,10 +6,10 @@ class RatingBar extends StatelessWidget {
   final int ratingCount;
 
   const RatingBar({
-    Key? key,
+    super.key,
     required this.rating,
     required this.ratingCount,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

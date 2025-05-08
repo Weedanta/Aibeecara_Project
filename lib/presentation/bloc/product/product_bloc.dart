@@ -1,5 +1,4 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:my_project/domain/entities/product.dart';
 import 'package:my_project/domain/repositories/product_repository.dart';
 import '../product/product_event.dart';
 import '../product/product_state.dart';

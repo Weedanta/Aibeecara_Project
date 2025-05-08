@@ -5,9 +5,9 @@ class ProductImageSlider extends StatelessWidget {
   final String imageUrl;
 
   const ProductImageSlider({
-    Key? key,
+    super.key,
     required this.imageUrl,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

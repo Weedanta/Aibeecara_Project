@@ -7,10 +7,10 @@ class ProductGridItem extends StatelessWidget {
   final VoidCallback onTap;
 
   const ProductGridItem({
-    Key? key,
+    super.key,
     required this.product,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

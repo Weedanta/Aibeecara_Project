@@ -12,7 +12,7 @@ import 'package:my_project/presentation/widget/cart/cart_summary.dart';
 import 'package:my_project/presentation/widget/cart/empty_cart.dart';
 
 class CartScreen extends StatefulWidget {
-  const CartScreen({Key? key}) : super(key: key);
+  const CartScreen({super.key});
 
   @override
   State<CartScreen> createState() => _CartScreenState();

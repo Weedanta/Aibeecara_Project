@@ -12,7 +12,7 @@ import 'package:my_project/presentation/widget/profile/profile_menu_item.dart';
 import 'package:my_project/presentation/widget/profile/profile_section.dart';
 
 class ProfileScreen extends StatefulWidget {
-  const ProfileScreen({Key? key}) : super(key: key);
+  const ProfileScreen({super.key});
 
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();
@@ -189,33 +189,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ),
         const SizedBox(height: 24),
         
-        // Support Section
-        ProfileSection(
-          title: 'Support',
-          children: [
-            ProfileMenuItem(
-              icon: Icons.help_outline,
-              title: 'Help Center',
-              onTap: () {
-                // Navigate to help center screen
-              },
-            ),
-            ProfileMenuItem(
-              icon: Icons.headset_mic_outlined,
-              title: 'Contact Us',
-              onTap: () {
-                // Navigate to contact us screen
-              },
-            ),
-            ProfileMenuItem(
-              icon: Icons.privacy_tip_outlined,
-              title: 'Privacy Policy',
-              onTap: () {
-                // Navigate to privacy policy screen
-              },
-            ),
-          ],
-        ),
+        
         const SizedBox(height: 32),
         
         // Logout Button

@@ -3,7 +3,6 @@ import 'package:my_project/presentation/screens/auth_screen/login_screen.dart';
 import 'package:my_project/presentation/screens/auth_screen/onboarding.dart';
 import 'package:my_project/presentation/screens/auth_screen/signup_screen.dart';
 import 'package:my_project/presentation/screens/cart_screen/cart_screen.dart';
-import 'package:my_project/presentation/screens/main_screen/home_screen.dart';
 import 'package:my_project/presentation/screens/main_screen/main_screen.dart';
 import 'package:my_project/presentation/screens/product_detail_screen/product_detail_screen.dart';
 import 'package:my_project/presentation/screens/profile_screen/profile_screen.dart';

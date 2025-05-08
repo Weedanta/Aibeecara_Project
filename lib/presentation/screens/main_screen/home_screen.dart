@@ -11,7 +11,7 @@ import 'package:my_project/presentation/widget/home_screen/product_grid_item.dar
 import 'package:my_project/presentation/widget/home_screen/category_selector.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();

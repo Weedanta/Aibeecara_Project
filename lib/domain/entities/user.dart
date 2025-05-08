@@ -84,10 +84,16 @@ class Address {
   });
 
   factory Address.fromJson(Map<String, dynamic> json) {
+    // Handle number field which could be an integer or string
+    final dynamic numberValue = json['number'];
+    final String numberString = numberValue is int 
+        ? numberValue.toString() 
+        : numberValue as String;
+
     return Address(
       city: json['city'],
       street: json['street'],
-      number: json['number'],
+      number: numberString,
       zipcode: json['zipcode'],
       geolocation: json['geolocation'] != null
           ? Geolocation.fromJson(json['geolocation'])
@@ -118,9 +124,13 @@ class Geolocation {
   });
 
   factory Geolocation.fromJson(Map<String, dynamic> json) {
+    // Handle possible different key names
+    final String latitude = json['lat'] ?? json['latitude'] ?? "";
+    final String longitude = json['lng'] ?? json['long'] ?? json['longitude'] ?? "";
+    
     return Geolocation(
-      lat: json['lat'],
-      lng: json['lng'],
+      lat: latitude,
+      lng: longitude,
     );
   }
 

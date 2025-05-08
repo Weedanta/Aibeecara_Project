@@ -6,9 +6,9 @@ class ProfileHeader extends StatelessWidget {
   final User user;
 
   const ProfileHeader({
-    Key? key,
+    super.key,
     required this.user,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -83,7 +83,7 @@ class ProfileHeader extends StatelessWidget {
                 ),
                 const SizedBox(width: 4),
                 Text(
-                  '${user.address!.city}',
+                  user.address!.city,
                   style: TextStyle(
                     fontSize: 14,
                     color: AppColors.textLight,

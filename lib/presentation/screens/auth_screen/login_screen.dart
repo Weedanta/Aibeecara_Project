@@ -18,7 +18,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  final TextEditingController _emailController = TextEditingController();
+  final TextEditingController _usernameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
   bool _obscurePassword = true;
@@ -28,11 +28,15 @@ class _LoginScreenState extends State<LoginScreen> {
   void initState() {
     super.initState();
     _authBloc = getIt<AuthBloc>();
+    
+    // Pre-fill with test user credentials for demo purposes
+    _usernameController.text = 'johnd';
+    _passwordController.text = 'm38rmF\$';
   }
 
   @override
   void dispose() {
-    _emailController.dispose();
+    _usernameController.dispose();
     _passwordController.dispose();
     super.dispose();
   }
@@ -43,9 +47,9 @@ class _LoginScreenState extends State<LoginScreen> {
     });
   }
 
-  String? _validateEmail(String? value) {
+  String? _validateUsername(String? value) {
     if (value == null || value.isEmpty) {
-      return 'Email is required';
+      return 'Username is required';
     }
     
     return null;
@@ -55,17 +59,12 @@ class _LoginScreenState extends State<LoginScreen> {
     if (value == null || value.isEmpty) {
       return 'Password is required';
     }
-    if (value.length < 6) {
-      return 'Password must be at least 6 characters';
-    }
     return null;
   }
 
   void _login() {
     if (_formKey.currentState!.validate()) {
-      // Untuk FakeStoreAPI kita perlu menggunakan username bukan email
-      // Karena ini hanya demo, kita anggap email sebagai username
-      final username = _emailController.text;
+      final username = _usernameController.text;
       final password = _passwordController.text;
 
       _authBloc.add(Login(
@@ -82,9 +81,8 @@ class _LoginScreenState extends State<LoginScreen> {
       child: BlocListener<AuthBloc, AuthState>(
         listener: (context, state) {
           if (state is AuthLoading) {
-
+            // Show loading indicator if needed
           } else if (state is Authenticated) {
-            
             ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(content: Text('Login successful!')),
             );
@@ -133,14 +131,14 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                           const SizedBox(height: 40),
                           
-                          // Email field
+                          // Username field
                           CustomFormField(
-                            label: 'Email/Username',
-                            hintText: 'Enter your email or username',
-                            prefixIcon: Icons.email_outlined,
-                            controller: _emailController,
-                            validator: _validateEmail,
-                            keyboardType: TextInputType.emailAddress,
+                            label: 'Username',
+                            hintText: 'Enter your username',
+                            prefixIcon: Icons.person_outline,
+                            controller: _usernameController,
+                            validator: _validateUsername,
+                            keyboardType: TextInputType.text,
                           ),
                           const SizedBox(height: 20),
                           
@@ -159,7 +157,6 @@ class _LoginScreenState extends State<LoginScreen> {
                             textInputAction: TextInputAction.done,
                           ),
                           const SizedBox(height: 16),
-                          
                           
                           const SizedBox(height: 24),
                           
@@ -197,6 +194,37 @@ class _LoginScreenState extends State<LoginScreen> {
                                   ),
                                 ],
                               ),
+                            ),
+                          ),
+                          
+                          // Demo credentials info
+                          const SizedBox(height: 40),
+                          Container(
+                            padding: const EdgeInsets.all(16),
+                            decoration: BoxDecoration(
+                              color: AppColors.primary.withOpacity(0.1),
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Demo Credentials:',
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold,
+                                    color: AppColors.textPrimary,
+                                  ),
+                                ),
+                                const SizedBox(height: 8),
+                                Text(
+                                  'Username: johnd\nPassword: m38rmF\$',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: AppColors.textSecondary,
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ],

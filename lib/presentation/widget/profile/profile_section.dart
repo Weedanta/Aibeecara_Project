@@ -6,10 +6,10 @@ class ProfileSection extends StatelessWidget {
   final List<Widget> children;
 
   const ProfileSection({
-    Key? key,
+    super.key,
     required this.title,
     required this.children,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
