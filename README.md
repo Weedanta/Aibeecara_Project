@@ -4,20 +4,54 @@ A modern Flutter e-commerce application that connects to the FakeStoreAPI to pro
 
 ## 📱 Screenshots
 
+## 📱 Screenshots
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center">
+
 ### Flow Aplikasi
-<img src="images/documentation/home.png" width="300" alt="Home Screen"/>
-<img src="images/documentation/login.png" width="300" alt="Login Screen"/>
-<img src="images/documentation/signup.png" width="300" alt="Signup Screen"/>
+  <div style="flex: 1 1 300px; text-align: center">
+    <img src="images/documentation/home.png" width="100%" alt="Home Screen"/>
+    <p><strong>Home Screen</strong><br/>Tampilan beranda aplikasi</p>
+  </div>
+  
+  <div style="flex: 1 1 300px; text-align: center">
+    <img src="images/documentation/login.png" width="100%" alt="Login Screen"/>
+    <p><strong>Login Screen</strong><br/>Halaman masuk pengguna</p>
+  </div>
+  
+  <div style="flex: 1 1 300px; text-align: center">
+    <img src="images/documentation/signup.png" width="100%" alt="Signup Screen"/>
+    <p><strong>Signup Screen</strong><br/>Form pendaftaran akun baru</p>
+  </div>
 
 ### Onboarding
-<img src="images/documentation/onboarding1.png" width="300" alt="Onboarding Step 1"/>
-<img src="images/documentation/onboarding2.png" width="300" alt="Onboarding Step 2"/>
-<img src="images/documentation/onboarding3.png" width="300" alt="Onboarding Step 3"/>
+  <div style="flex: 1 1 300px; text-align: center">
+    <img src="images/documentation/onboarding1.png" width="100%" alt="Onboarding Step 1"/>
+    <p><strong>Onboarding 1</strong><br/>Tutorial penggunaan awal</p>
+  </div>
+  
+  <div style="flex: 1 1 300px; text-align: center">
+    <img src="images/documentation/onboarding2.png" width="100%" alt="Onboarding Step 2"/>
+    <p><strong>Onboarding 2</strong><br/>Fitur unggulan aplikasi</p>
+  </div>
+  
+  <div style="flex: 1 1 300px; text-align: center">
+    <img src="images/documentation/onboarding3.png" width="100%" alt="Onboarding Step 3"/>
+    <p><strong>Onboarding 3</strong><br/>Personalisasi preferensi</p>
+  </div>
 
 ### Lainnya
-<img src="images/documentation/splashscreen.png" width="300" alt="Splash Screen"/>
-<img src="images/documentation/profile.png" width="300" alt="Profile Screen"/>
+  <div style="flex: 1 1 300px; text-align: center">
+    <img src="images/documentation/splashscreen.png" width="100%" alt="Splash Screen"/>
+    <p><strong>Splash Screen</strong><br/>Tampilan pembuka aplikasi</p>
+  </div>
+  
+  <div style="flex: 1 1 300px; text-align: center">
+    <img src="images/documentation/profile.png" width="100%" alt="Profile Screen"/>
+    <p><strong>Profile Screen</strong><br/>Manajemen profil pengguna</p>
+  </div>
 
+</div>
 ## ✨ Features
 
 ### Authentication
