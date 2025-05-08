@@ -4,51 +4,52 @@ A modern Flutter e-commerce application that connects to the FakeStoreAPI to pro
 
 ## 📱 Screenshots
 
-<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: start">
+FakeStore E-Commerce App
+A modern Flutter e-commerce application that connects to the FakeStoreAPI to provide a complete shopping experience. This mobile app is built using the BLoC pattern, clean architecture principles, and follows best practices for modern mobile development.
+📱 Screenshots
 
-<!-- Baris 1 - Kategori -->
-<div style="flex: 1 1 30%; min-width: 300px; text-align: center">
-  <img src="images/documentation/all-categories.png" style="width: 100%; border: 1px solid #eee; border-radius: 8px"/>
-  <p style="margin-top: 8px">
-    <strong>All Categories</strong><br/>
-    Electronics, Jewelery, Men's Clothing
-  </p>
+<div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center">
+Flow Aplikasi
+  <div style="flex: 1 1 30%; text-align: center">
+    <img src="images/home.png" width="30%" alt="Home Screen"/>
+    <p><strong>Home Screen</strong><br/>Tampilan beranda aplikasi</p>
+  </div>
+  <div style="flex: 1 1 30%; text-align: center">
+    <img src="images/login.png" width="30%" alt="Login Screen"/>
+    <p><strong>Login Screen</strong><br/>Halaman masuk pengguna</p>
+  </div>
+  <div style="flex: 1 1 30%; text-align: center">
+    <img src="images/signup.png" width="30%" alt="Signup Screen"/>
+    <p><strong>Signup Screen</strong><br/>Form pendaftaran akun baru</p>
+  </div>
+Onboarding
+  <div style="flex: 1 1 30%; text-align: center">
+    <img src="images/onboarding1.png" width="30%" alt="Onboarding Step 1"/>
+    <p><strong>Onboarding 1</strong><br/>Tutorial penggunaan awal</p>
+  </div>
+  <div style="flex: 1 1 30%; text-align: center">
+    <img src="images/onboarding2.png" width="30%" alt="Onboarding Step 2"/>
+    <p><strong>Onboarding 2</strong><br/>Fitur unggulan aplikasi</p>
+  </div>
+  <div style="flex: 1 1 30%; text-align: center">
+    <img src="images/onboarding3.png" width="30%" alt="Onboarding Step 3"/>
+    <p><strong>Onboarding 3</strong><br/>Personalisasi preferensi</p>
+  </div>
+Lainnya
+  <div style="flex: 1 1 30%; text-align: center">
+    <img src="images/splashscreen.png" width="30%" alt="Splash Screen"/>
+    <p><strong>Splash Screen</strong><br/>Tampilan pembuka aplikasi</p>
+  </div>
+  <div style="flex: 1 1 30%; text-align: center">
+    <img src="images/profile.png" width="30%" alt="Profile Screen"/>
+    <p><strong>Profile Screen</strong><br/>Manajemen profil pengguna</p>
+  </div>
+  <div style="flex: 1 1 30%; text-align: center">
+    <img src="images/cart.png" width="30%" alt="Cart Screen"/>
+    <p><strong>Cart Screen</strong><br/>Keranjang belanja</p>
+  </div>
 </div>
 
-<div style="flex: 1 1 30%; min-width: 300px; text-align: center">
-  <img src="images/documentation/electronics.png" style="width: 100%; border: 1px solid #eee; border-radius: 8px"/>
-  <p style="margin-top: 8px">
-    <strong>Electronics</strong><br/>
-    Pencarian produk elektronik
-  </p>
-</div>
-
-<div style="flex: 1 1 30%; min-width: 300px; text-align: center">
-  <img src="images/documentation/mens-clothing.png" style="width: 100%; border: 1px solid #eee; border-radius: 8px"/>
-  <p style="margin-top: 8px">
-    <strong>Men's Clothing</strong><br/>
-    Koleksi pakaian pria premium
-  </p>
-</div>
-
-<!-- Baris 2 - Product View -->
-<div style="flex: 1 1 30%; min-width: 300px; text-align: center">
-  <img src="images/documentation/product-list.png" style="width: 100%; border: 1px solid #eee; border-radius: 8px"/>
-  <p style="margin-top: 8px">
-    <strong>Product List</strong><br/>
-    Tampilan daftar produk "Fjallraven - Foldsack"
-  </p>
-</div>
-
-<div style="flex: 1 1 30%; min-width: 300px; text-align: center">
-  <img src="images/documentation/product-detail.png" style="width: 100%; border: 1px solid #eee; border-radius: 8px"/>
-  <p style="margin-top: 8px">
-    <strong>Product Detail</strong><br/>
-    Detail produk "Mens Casual Premium"
-  </p>
-</div>
-
-</div>
 ## ✨ Features
 
 ### Authentication
