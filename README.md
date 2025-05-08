@@ -12,7 +12,7 @@ A modern Flutter e-commerce application that connects to the FakeStoreAPI to pro
 ### Onboarding
 <img src="images/documentation/onboarding1.png" width="300" alt="Onboarding Step 1"/>
 <img src="images/documentation/onboarding2.png" width="300" alt="Onboarding Step 2"/>
-<img src="screimages/documentationenshots/onboarding3.png" width="300" alt="Onboarding Step 3"/>
+<img src="images/documentation/onboarding3.png" width="300" alt="Onboarding Step 3"/>
 
 ### Lainnya
 <img src="images/documentation/splashscreen.png" width="300" alt="Splash Screen"/>
