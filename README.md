@@ -4,63 +4,62 @@ A modern Flutter e-commerce application that connects to the FakeStoreAPI to pro
 
 ## 📱 Screenshots
 
-## 📱 Screenshots
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: start">
 
-<div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center">
+<!-- Baris 1 - Kategori -->
+<div style="flex: 1 1 30%; min-width: 300px; text-align: center">
+  <img src="images/documentation/all-categories.png" style="width: 100%; border: 1px solid #eee; border-radius: 8px"/>
+  <p style="margin-top: 8px">
+    <strong>All Categories</strong><br/>
+    Electronics, Jewelery, Men's Clothing
+  </p>
+</div>
 
-### Flow Aplikasi
-  <div style="flex: 1 1 300px; text-align: center">
-    <img src="images/documentation/home.png" width="100%" alt="Home Screen"/>
-    <p><strong>Home Screen</strong><br/>Tampilan beranda aplikasi</p>
-  </div>
-  
-  <div style="flex: 1 1 300px; text-align: center">
-    <img src="images/documentation/login.png" width="100%" alt="Login Screen"/>
-    <p><strong>Login Screen</strong><br/>Halaman masuk pengguna</p>
-  </div>
-  
-  <div style="flex: 1 1 300px; text-align: center">
-    <img src="images/documentation/signup.png" width="100%" alt="Signup Screen"/>
-    <p><strong>Signup Screen</strong><br/>Form pendaftaran akun baru</p>
-  </div>
+<div style="flex: 1 1 30%; min-width: 300px; text-align: center">
+  <img src="images/documentation/electronics.png" style="width: 100%; border: 1px solid #eee; border-radius: 8px"/>
+  <p style="margin-top: 8px">
+    <strong>Electronics</strong><br/>
+    Pencarian produk elektronik
+  </p>
+</div>
 
-### Onboarding
-  <div style="flex: 1 1 300px; text-align: center">
-    <img src="images/documentation/onboarding1.png" width="100%" alt="Onboarding Step 1"/>
-    <p><strong>Onboarding 1</strong><br/>Tutorial penggunaan awal</p>
-  </div>
-  
-  <div style="flex: 1 1 300px; text-align: center">
-    <img src="images/documentation/onboarding2.png" width="100%" alt="Onboarding Step 2"/>
-    <p><strong>Onboarding 2</strong><br/>Fitur unggulan aplikasi</p>
-  </div>
-  
-  <div style="flex: 1 1 300px; text-align: center">
-    <img src="images/documentation/onboarding3.png" width="100%" alt="Onboarding Step 3"/>
-    <p><strong>Onboarding 3</strong><br/>Personalisasi preferensi</p>
-  </div>
+<div style="flex: 1 1 30%; min-width: 300px; text-align: center">
+  <img src="images/documentation/mens-clothing.png" style="width: 100%; border: 1px solid #eee; border-radius: 8px"/>
+  <p style="margin-top: 8px">
+    <strong>Men's Clothing</strong><br/>
+    Koleksi pakaian pria premium
+  </p>
+</div>
 
-### Lainnya
-  <div style="flex: 1 1 300px; text-align: center">
-    <img src="images/documentation/splashscreen.png" width="100%" alt="Splash Screen"/>
-    <p><strong>Splash Screen</strong><br/>Tampilan pembuka aplikasi</p>
-  </div>
-  
-  <div style="flex: 1 1 300px; text-align: center">
-    <img src="images/documentation/profile.png" width="100%" alt="Profile Screen"/>
-    <p><strong>Profile Screen</strong><br/>Manajemen profil pengguna</p>
-  </div>
+<!-- Baris 2 - Product View -->
+<div style="flex: 1 1 30%; min-width: 300px; text-align: center">
+  <img src="images/documentation/product-list.png" style="width: 100%; border: 1px solid #eee; border-radius: 8px"/>
+  <p style="margin-top: 8px">
+    <strong>Product List</strong><br/>
+    Tampilan daftar produk "Fjallraven - Foldsack"
+  </p>
+</div>
+
+<div style="flex: 1 1 30%; min-width: 300px; text-align: center">
+  <img src="images/documentation/product-detail.png" style="width: 100%; border: 1px solid #eee; border-radius: 8px"/>
+  <p style="margin-top: 8px">
+    <strong>Product Detail</strong><br/>
+    Detail produk "Mens Casual Premium"
+  </p>
+</div>
 
 </div>
 ## ✨ Features
 
 ### Authentication
+
 - User registration with profile creation
 - Login system with token-based authentication
 - Persistent login using shared preferences
 - Profile management
 
 ### Product Browsing
+
 - Browse all products on the home screen
 - Filter products by categories
 - Search functionality
@@ -69,6 +68,7 @@ A modern Flutter e-commerce application that connects to the FakeStoreAPI to pro
 - Product image display
 
 ### Shopping Cart
+
 - Add products to cart
 - Update item quantities
 - Remove items from cart
@@ -76,6 +76,7 @@ A modern Flutter e-commerce application that connects to the FakeStoreAPI to pro
 - Checkout process
 
 ### User Profile
+
 - View and edit user information
 - Access order history
 - Manage shipping addresses
@@ -83,6 +84,7 @@ A modern Flutter e-commerce application that connects to the FakeStoreAPI to pro
 - Application preferences
 
 ### UI Features
+
 - Elegant onboarding experience
 - Smooth animations and transitions
 - Clean and modern UI design
@@ -96,16 +98,19 @@ A modern Flutter e-commerce application that connects to the FakeStoreAPI to pro
 The application is built with a clean architecture approach:
 
 ### Layers
+
 - **Domain**: Contains business logic, entities, and repository interfaces
 - **Data**: Implements repositories and connects to external data sources (API)
 - **Presentation**: UI components, screens, and BLoC state management
 
 ### State Management
+
 - BLoC (Business Logic Component) pattern for state management
 - Event-driven architecture
 - Clear separation of UI and business logic
 
 ### Dependency Injection
+
 - GetIt for service location and dependency injection
 - Lazy singleton pattern for repositories
 - Factory pattern for BLoCs
@@ -122,6 +127,7 @@ The application is built with a clean architecture approach:
 ## 📡 API Integration
 
 The app connects to the [FakeStoreAPI](https://fakestoreapi.com/) which provides:
+
 - Product listings
 - Categories
 - User authentication
@@ -130,6 +136,7 @@ The app connects to the [FakeStoreAPI](https://fakestoreapi.com/) which provides
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Flutter SDK (version 2.5.0 or higher)
 - Dart SDK (version 2.14.0 or higher)
 - Android Studio / VS Code with Flutter extensions
@@ -137,21 +144,25 @@ The app connects to the [FakeStoreAPI](https://fakestoreapi.com/) which provides
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/fakestore-app.git
 ```
 
 2. Navigate to the project directory:
+
 ```bash
 cd fakestore-app
 ```
 
 3. Install dependencies:
+
 ```bash
 flutter pub get
 ```
 
 4. Run the app:
+
 ```bash
 flutter run
 ```
@@ -201,4 +212,3 @@ lib/
 │       └── [other widgets]
 └── main.dart
 ```
-
