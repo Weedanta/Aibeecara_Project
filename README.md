@@ -11,41 +11,41 @@ A modern Flutter e-commerce application that connects to the FakeStoreAPI to pro
 <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center">
 Flow Aplikasi
   <div style="flex: 1 1 30%; text-align: center">
-    <img src="images/home.png" width="30%" alt="Home Screen"/>
+    <img src="images/documentation/home.png" width="30%" alt="Home Screen"/>
     <p><strong>Home Screen</strong><br/>Tampilan beranda aplikasi</p>
   </div>
   <div style="flex: 1 1 30%; text-align: center">
-    <img src="images/login.png" width="30%" alt="Login Screen"/>
+    <img src="images/documentation/login.png" width="30%" alt="Login Screen"/>
     <p><strong>Login Screen</strong><br/>Halaman masuk pengguna</p>
   </div>
   <div style="flex: 1 1 30%; text-align: center">
-    <img src="images/signup.png" width="30%" alt="Signup Screen"/>
+    <img src="images/documentation/signup.png" width="30%" alt="Signup Screen"/>
     <p><strong>Signup Screen</strong><br/>Form pendaftaran akun baru</p>
   </div>
 Onboarding
   <div style="flex: 1 1 30%; text-align: center">
-    <img src="images/onboarding1.png" width="30%" alt="Onboarding Step 1"/>
+    <img src="images/documentation/onboarding1.png" width="30%" alt="Onboarding Step 1"/>
     <p><strong>Onboarding 1</strong><br/>Tutorial penggunaan awal</p>
   </div>
   <div style="flex: 1 1 30%; text-align: center">
-    <img src="images/onboarding2.png" width="30%" alt="Onboarding Step 2"/>
+    <img src="images/documentation/onboarding2.png" width="30%" alt="Onboarding Step 2"/>
     <p><strong>Onboarding 2</strong><br/>Fitur unggulan aplikasi</p>
   </div>
   <div style="flex: 1 1 30%; text-align: center">
-    <img src="images/onboarding3.png" width="30%" alt="Onboarding Step 3"/>
+    <img src="images/documentation/onboarding3.png" width="30%" alt="Onboarding Step 3"/>
     <p><strong>Onboarding 3</strong><br/>Personalisasi preferensi</p>
   </div>
 Lainnya
   <div style="flex: 1 1 30%; text-align: center">
-    <img src="images/splashscreen.png" width="30%" alt="Splash Screen"/>
+    <img src="images/documentation/splashscreen.png" width="30%" alt="Splash Screen"/>
     <p><strong>Splash Screen</strong><br/>Tampilan pembuka aplikasi</p>
   </div>
   <div style="flex: 1 1 30%; text-align: center">
-    <img src="images/profile.png" width="30%" alt="Profile Screen"/>
+    <img src="images/documentation/profile.png" width="30%" alt="Profile Screen"/>
     <p><strong>Profile Screen</strong><br/>Manajemen profil pengguna</p>
   </div>
   <div style="flex: 1 1 30%; text-align: center">
-    <img src="images/cart.png" width="30%" alt="Cart Screen"/>
+    <img src="images/documentation/cart.png" width="30%" alt="Cart Screen"/>
     <p><strong>Cart Screen</strong><br/>Keranjang belanja</p>
   </div>
 </div>
